@@ -10,6 +10,23 @@ pipeline {
         }
      }
      
+     
+     
+     tools {nodejs "nodejs"}
+
+     stages {
+      stage('Example') {
+       steps {
+        sh 'npm config ls'
+      }
+    }
+  }
+     
+     
+     
+     
+     
+     
      stage('Test') { 
         steps { 
            sh 'echo "testing application..."'
